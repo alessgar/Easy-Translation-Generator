@@ -1,0 +1,17 @@
+{
+  "name": "ez-translator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vitalets/google-translate-api": "^7.0.0",
+    "fs": "0.0.1-security",
+    "save": "^2.4.0",
+    "sleep-promise": "^9.1.0",
+  }
+}
