@@ -23,7 +23,7 @@ async function main(){
 
                 var partToReplace = line.substring(line.indexOf("\"")+1, line.lastIndexOf("\""));
                 var result = await translate(partToReplace, {from: 'en', to: languageCode});
-                var translatedPart = result.text.replace("\ \"","\"");
+                var translatedPart = result.text.replace("\ \"","\\\"");
                 line = line.replace("\"" + partToReplace + "\"", "\"" + translatedPart + "\"");
                 console.log(partToReplace + " -> " + translatedPart + " -> " + line);
             }
